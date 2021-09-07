@@ -1,0 +1,9 @@
+<title>Success</title>
+<textarea>Base64 encoded image: {{imgb64}}</textarea>
+
+<script>
+    const base64 = "{{imgb64}}"
+    const image = new Image()
+    image.src = `data:image/png;base64,${base64}`
+    document.body.appendChild(image) 
+</script>
